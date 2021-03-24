@@ -3,6 +3,18 @@
 Packages:
 
 1. Eslint
+
+   - "yarn add --dev eslint prettier @react-native-community/eslint-config"
+   - create a file '.eslintrc'
+   - paste '{
+     "extends": "@react-native-community"
+     },
+     "rules": {
+     "quotes": [2, "single", { "avoidEscape": true }]
+     } ' into '.eslintrc' file
+   - add ',"lint": "eslint . --ext .js"' into package.json file under '"scripts": {..}'
+   - To check, run "yarn lint"
+
 2. Prettier
 
 3. React Native Paper

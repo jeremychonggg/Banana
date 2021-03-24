@@ -27,8 +27,8 @@ export const colors = {
   },
 };
 
-// #F8E9A1 
-// #F76C6C 
+// #F8E9A1
+// #F76C6C
 // #A8D0E6
 // #374785
 // #24305E
