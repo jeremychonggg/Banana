@@ -48,4 +48,11 @@ Packages:
    - "yarn add @react-navigation/bottom-tabs"
 
 10. Expo Icon
+
     - Google Search @expo/vector-icons
+
+11. React Icon
+
+- "yarn add react-icons"
+
+12.

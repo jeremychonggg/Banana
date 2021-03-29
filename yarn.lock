@@ -1338,6 +1338,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@icon-park/react@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@icon-park/react/-/react-1.3.1.tgz#1c0517fec4677a9de84499e315833b7c000dbf7e"
+  integrity sha512-yYofButCA6Fzih6QK/iInShVyCNt2fKowA4aDarZkxpMCdDCRuLx7QsIADZm4UguJCLVIbsCQFCf2aUHRXt96Q==
+
 "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
@@ -6087,6 +6092,11 @@ react-dom@16.13.1:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.19.1"
+
+react-icons@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.2.0.tgz#6dda80c8a8f338ff96a1851424d63083282630d0"
+  integrity sha512-rmzEDFt+AVXRzD7zDE21gcxyBizD/3NqjbX6cmViAgdqfJ2UiLer8927/QhhrXQV7dEj/1EGuOTPp7JnLYVJKQ==
 
 react-is@^16.12.0, react-is@^16.13.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.13.1"

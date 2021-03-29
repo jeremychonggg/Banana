@@ -6,6 +6,10 @@ import { ThemeProvider } from "styled-components/native";
 // Import Navigation
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+// Import Icon
+import { AntDesign } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
+import { AiOutlineUser } from "react-icons/ai";
 
 // Import Fonts
 import {
@@ -42,7 +46,30 @@ export default function App() {
     <>
       <ThemeProvider theme={theme}>
         <NavigationContainer>
-          <Tab.Navigator>
+          <Tab.Navigator
+            screenOptions={({ route }) => ({
+              tabBarIcon: ({ color, size }) => {
+                let iconName;
+
+                if (route.name === "Tuitions") {
+                  iconName = "open-book";
+                  return <Entypo name={iconName} size={size} color={color} />;
+                } else if (route.name === "Profile") {
+                  iconName = "user";
+                  return (
+                    <AntDesign name={iconName} size={size} color={color} />
+                    /*
+                    <AiOutlineUser name={iconName} size={size} color={color} />
+                    */
+                  );
+                }
+              },
+            })}
+            tabBarOptions={{
+              activeTintColor: "blue",
+              inactiveTintColor: "gray",
+            }}
+          >
             <Tab.Screen name="Tuitions" component={TuitionsScreen} />
             <Tab.Screen name="Profile" component={ProfileScreen} />
           </Tab.Navigator>
@@ -70,8 +97,12 @@ export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <TuitionsScreen />
-        <ProfileScreen />
+        <NavigationContainer>
+          <Tab.Navigator>
+            <Tab.Screen name="Tuitions" component={TuitionsScreen} />
+            <Tab.Screen name="Profile" component={ProfileScreen} />
+          </Tab.Navigator>
+        </NavigationContainer>
       </ThemeProvider>
       <ExpoStatusBar style="auto" />
     </>
